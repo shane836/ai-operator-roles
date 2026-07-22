@@ -152,6 +152,12 @@ python3 build_db.py
 
 ---
 
+## Development Roadmap
+
+- [ ] **Live scraper integration** — Connect to the [AI Operators](https://aioperators.substack.com/) scraper so the dataset updates automatically as new listings are published, replacing the current point-in-time snapshot with a continuously refreshed feed.
+
+---
+
 ## Caveats
 
 - **Point-in-time.** Captured June 2026; postings open and close constantly. Treat as a sample, not the whole market.
