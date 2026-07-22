@@ -138,6 +138,8 @@ Once it has the database open, these get interesting answers fast:
 
 ## How the dataset was built
 
+**Source:** The roles in this dataset were curated from [AI Operators](https://aioperators.substack.com/), a Substack tracking operator roles at AI startups. Job posting URLs were collected from the newsletter and then scraped from company boards.
+
 1. **Scrape** job postings from company boards → `roles_raw.json`.
 2. **Tag** each responsibility/qualification bullet with a theme via an LLM pass → `tag_results.json` (driver: `tag_workflow.js`).
 3. **Normalize & load** into SQLite, deriving role family, comp bands, seniority, etc. → `build_db.py` writes `ai_operator_roles.sqlite`.
